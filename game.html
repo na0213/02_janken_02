@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <div class="header">
+        <p onclick="location.href='index.html'" class="top"><img src="img/house.png" alt=""></p>
+        <p onclick="location.href='point.html'">お世話ポイント：<span id="score-plus">0</span></p>
+    </div>
+</header>
+<body>
+    <div class="back">
+        <div class="image-wrapper">
+            <div class="video-random">
+                <video class="video" src="" id="pcVideo"></video>
+
+                <div class="result">
+                    <p id="point"></p>
+                    <p id="comment" class="re"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            loadAndPlayVideo();
+        });
+    </script>
+</body>
+</html>

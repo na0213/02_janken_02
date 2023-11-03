@@ -1,0 +1,44 @@
+/* ------------ cow.html ------------ */
+.wrapper {
+    margin-bottom: 20px;
+    background: url(../img/turu.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 300px 0;
+}
+
+.wrapper ul {
+    list-style: none;
+    width: 296px;
+    margin-left: 20px;
+    padding: 20px 24px;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.8);
+    line-height: 3;
+}
+.take {
+    font-size: 1.4rem;
+    color: rgb(19, 17, 17);
+    border-radius: 5px;
+    padding:  18px 10px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 10px;
+    box-shadow: 0 4px #335a00;
+}
+.take:after {
+    content: "";
+    position: absolute;
+    top: 50%;  /* 上から50％の位置に配置 */
+    right: 16px;  /* 文字の右横に空白 */
+    transform: translateY(-50%);  /* 50％上に配置することで、縦方向の中央に配置 */
+    width: 30px;  /* アイコンの幅 */
+    height: 30px;  /* アイコンの高さ */
+    background: url("../img/nu00599.png") center/contain no-repeat;  /* 画像の設定、サイズ調整、繰り返しオフ */
+}
+.wagyu {
+    font-size: 20px;
+}
+.wagyu-take {
+    color: blue;
+    font-weight: bold;
+}

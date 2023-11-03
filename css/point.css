@@ -1,0 +1,76 @@
+/* ------------ top.html ------------ */
+.page-title {
+    font-size: 20px;
+}
+/* .point-select {
+    text-align: center;
+    margin-bottom: 30px;
+} */
+.back {
+    padding: 20px;
+}
+.point-select {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.point-select::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+.point-select select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
+    background-color: #fff;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+}
+.gu {
+    margin-top: 30px;
+}
+.sentaku {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.sentaku img {
+    width: 25%;
+    margin-top: 10px;
+}
+.result-content {
+    list-style: none;
+}
+ul {
+    display: flex;
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+li img {
+    width: 50%;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+.result-present {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.result-present img {
+    width: 80%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/point.css">
+</head>
+<header>
+    <div class="header">
+        <p onclick="location.href='index.html'" class="top"><img src="img/house.png" alt=""></p>
+        <p onclick="location.href='point.html'">お世話ポイント：<span id="score-plus">0</span></p>
+    </div>
+</header>
+<body>
+    <div class="back">
+        <div class="content">
+            <p class="page-title">ポイントを使う！</p>
+
+            <div class="point-select">◆ポイント数を選んでね！
+                <select name="chance" class="form-select">
+                    <option>10ポイント</option>
+                    <option>20ポイント</option>
+                </select>
+            </div>
+        </div>
+        <div class="gu">◆ぐー・ちょき・ぱーを選んでね！
+            <div class="sentaku">
+                <img src="img/gu.png" alt="" onclick="janken(0)">
+                <img src="img/choki.png" alt="" onclick="janken(1)">
+                <img src="img/pa.png" alt="" onclick="janken(2)">
+            </div>
+        </div>
+        <div id="res">
+            <p id="result"></p>
+        </div>
+        <ul class="result-content">
+            <li class="result-item">
+                <img src="" id="userImg">
+            </li>
+            <li class="result-item">
+                <img src="" id="pcImg">
+            </li>
+        </ul>
+        <div class="result-present" id="resultImageContainer"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/point.js"></script>
+    <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+    <script>imageMapResize();</script>
+
+</body>
+</html>

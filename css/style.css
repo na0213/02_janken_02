@@ -1,0 +1,175 @@
+/* 共有 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 1rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d1dce5;
+    z-index: 999;
+}
+.top img {
+    width: 50%;
+}
+.sub-header {
+    display: flex;
+    justify-content: end;
+}
+.back {
+    background-color: rgb(235, 227, 219);
+}
+.farm-name {
+    position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left: 20px;;/*位置指定*/
+}
+.page-title {
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px;
+}
+.care {
+    font-size: 20px;
+    color: rgb(5, 177, 36);
+}
+button {
+    width: auto;
+    padding:0;
+    margin:0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+.icon {
+    width: 40%;
+}
+.balloon2 {
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    background-color: #f05b5b;
+    margin-left: 20px;
+    }
+    
+    .balloon2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -30px;
+    top: 50%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 20px solid #f05b5b;
+}
+
+/* 画像 */
+.image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    /* position: relative; */
+    cursor: grab;
+}
+.image-map {
+    overflow-x: scroll;
+}
+.image-map img {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.tooltip {
+width: 12%;
+display: none;
+position: absolute;
+background-color: #cdcbcb;
+border: none;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+z-index: 1000;
+cursor: pointer;
+}
+.vs img{
+    width: 50%;
+}
+
+/* ------------ game.html ------------ */
+.video-random {
+    display: flex;
+}
+.video {
+    width: 50%;
+    margin: 20px;
+}
+.result {
+    text-align:left;
+    margin-left: 20px;
+}
+#point {
+    font-size: 30px;
+    color: green;
+    display: flex;
+}
+.re {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+  }
+  
+  .re:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid #FFF;
+    z-index: 2;
+  }
+  
+  .re:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-right: 14px solid #555;
+    z-index: 1;
+  }
+  
+  .re p {
+    margin: 0;
+    padding: 0;
+  }
+/* ------------ cow.html ------------ */
+.cow-img {
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <div class="header">
+        <p onclick="location.href='index.html'" class="top"><img src="img/house.png" alt=""></p>
+        <p onclick="location.href='point.html'">お世話ポイント：<span id="score-plus">0</span></p>
+    </div>
+    <div class="sub-header">
+        <button type="button" class="reset"><img class="icon" src="img/octopus.png" alt=""></button>
+        <div class="balloon2">
+            押しちゃダメ！
+        </div>
+    </div>
+</header>
+<body>
+    <div class="back">
+        <div class="page-title">
+            <p>お手伝いをして<span class="care">お世話ポイント</span>を貯めよう！</p>
+        </div>
+    
+        <div class="image-wrapper">
+            <div class="image-map">
+                <img src="img/farm.jpg" usemap="#ImageMap" alt="" />
+                <map name="ImageMap">
+                    <area data-tooltip-id="tooltip1" shape="rect" coords="1064,1295,1509,1729" href="#" class="play" onclick="setVideoParameter()" alt="" />
+                    <area data-tooltip-id="tooltip2" shape="rect" coords="2648,848,3062,1434" href="cow.html" alt="" />
+                    <area data-tooltip-id="tooltip3" shape="rect" coords="3266,2119,3644,2265" href="eat.html" alt="" />
+    
+                    <div class="tooltip" id="tooltip1">お手伝いする！</div>
+                    <div class="tooltip" id="tooltip2">牛を見る！</div>
+                    <div class="tooltip" id="tooltip3">いただく！<br>（感謝）</div>
+                </map>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+    <script>imageMapResize();</script>
+
+</body>
+</html>
